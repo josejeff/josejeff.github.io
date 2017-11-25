@@ -100,12 +100,13 @@ a {
   padding: 200px 0;
   text-align: center;
   color: white;
-  background: url("../img/intro-bg.jpg") no-repeat bottom center scroll;
+  background: url("../img/Placeholder-Home.jpg") no-repeat bottom center;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed}
   .masthead .intro-body {
     display: table-cell;
     vertical-align: middle; }
@@ -144,14 +145,25 @@ a {
   padding-top: 150px;
   padding-bottom: 150px; }
 
+  .about-section {
+    color: white;
+    background: url("../img/intro-bg.jpg") no-repeat center center;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed}
+
 .download-section {
   color: white;
-  background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
+  background: url("../img/downloads-bg.jpg") no-repeat center center;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed}
 
 #map {
   width: 100%;

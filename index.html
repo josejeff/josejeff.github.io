@@ -19,12 +19,24 @@
     <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
+    <link href="css/grayscale.css" rel="stylesheet">
 
   </head>
 
   <body id="page-top">
 
+    <link rel ="stylesheet" href = "css/LoadingStyle.css">
+    <div id = "fatherLoad">
+      <div id = "load">
+        <div>G</div>
+        <div>N</div>
+        <div>I</div>
+        <div>D</div>
+        <div>A</div>
+        <div>O</div>
+        <div>L</div>
+      </div>
+    </div>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
@@ -68,7 +80,7 @@
     </header>
 
     <!-- About Section -->
-    <section  class="content-section text-center">
+    <section  class="about-section content-section text-center">
       <div class="container" id="about">
         <div class="row">
           <div  class="col-lg-8 mx-auto">
@@ -96,7 +108,7 @@
         <div class="col-lg-8 mx-auto">
           <h2>My Projects</h2>
           <p>You can find my work over here.</p>
-            <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">
+            <a href="https://github.com/jeffjose95" class="btn btn-default btn-lg">
               <div> <img src="https://i.ytimg.com/vi/TZGETa7-XWk/maxresdefault.jpg" width = "140" height = "100"> </div>
               Programs
             </a>
@@ -127,23 +139,30 @@
               on Start Bootstrap to give some feedback about this theme!</p> -->
             <ul class="list-inline banner-social-buttons">
               <li class="list-inline-item">
-                <a href="https://github.com/BlackrockDigital/startbootstrap" class="btn btn-default btn-lg">
+                <a href="https://github.com/jeffjose95" class="btn btn-default btn-lg">
                   <i class="fa fa-github fa-fw"></i>
                   <span class="network-name">Github</span>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://github.com/BlackrockDigital/startbootstrap" class="btn btn-default btn-lg">
+                <a href="https://www.linkedin.com/in/jeff-jose/" class="btn btn-default btn-lg">
                   <i class="fa fa-linkedin fa-fw"></i>
                   <span class="network-name">Linkedin</span>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg">
-                  <i class="fa fa-google-plus fa-fw"></i>
-                  <span class="network-name">Google+</span>
+                <a href="mailto:josejeff@yahoo.com" class="btn btn-default btn-lg">
+                  <i class="fa fa-yahoo fa-fw"></i>
+                  <span class="network-name">Yahoo</span>
                 </a>
               </li>
+              <li class="list-inline-item">
+                <a href="mailto:jeff.jose@sjsu.edu" class="btn btn-default btn-lg">
+                  <i class="fa fa-google-plus-square fa-fw"></i>
+                  <span class="network-name">Gmail</span>
+                </a>
+              </li>
+
             </ul>
           </div>
         </div>
@@ -170,6 +189,13 @@
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
 
+    <!-- Loading screen starter--->
+    <script>
+    function fatherLoad(){
+      $(function(){
+        $("#fatherLoad").fadeOut("slow");
+      })};
+      setTimeout(fatherLoad,4000);
+    </script>
   </body>
-
 </html>
