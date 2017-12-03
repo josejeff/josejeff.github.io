@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Space Puzzler</title>
-    <link rel="stylesheet" href="TheGame/TemplateData/style.css">
-    <link rel="shortcut icon" href="TheGame/TemplateData/favicon.ico" />
-    <script src="TheGame/TemplateData/UnityProgress.js"></script>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <script src="TemplateData/UnityProgress.js"></script>
   </head>
   <body class="template" style="background-color:black">
     <div class="template-wrap clear">
@@ -14,7 +14,7 @@
       <p style="color:white">Please wait as the game might be loading</p>
       <br>
       <div class="logo"></div>
-      <div class="fullscreen"><img src="TheGame/TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+      <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
       <div class="title">Space Puzzler</div>
     </div>
     <script type='text/javascript'>
@@ -24,13 +24,13 @@
     compatibilitycheck: null,
     backgroundColor: "#FFFFFF",
     splashStyle: "Dark",
-    dataUrl: "TheGame/Release/TheGame.data",
-    codeUrl: "TheGame/Release/TheGame.js",
-    asmUrl: "TheGame/Release/TheGame.asm.js",
-    memUrl: "TheGame/Release/TheGame.mem",
+    dataUrl: "Release/TheGame.data",
+    codeUrl: "Release/TheGame.js",
+    asmUrl: "Release/TheGame.asm.js",
+    memUrl: "Release/TheGame.mem",
   };
 </script>
-<!-- <script>
+<script>
   /**
    * Created by
    * Matteo Bicocchi @pupunzi
@@ -87,8 +87,8 @@
       dotCount = dotCount >= 40 ? 0 : ++dotCount;
     }
   },100)
-</script> -->
-<script src="TheGame/Release/UnityLoader.js"></script>
+</script>
+<script src="Release/UnityLoader.js"></script>
 
   </body>
 </html>
