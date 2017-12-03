@@ -11,15 +11,16 @@
     <title>Jeff's Portfolio</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
-
     <!-- Custom styles for this template -->
     <link href="css/grayscale.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   </head>
 
@@ -80,7 +81,7 @@
     </header>
 
     <!-- About Section -->
-    <section  class="about-section content-section text-center">
+    <section  class="about-section content-section text-center" >
       <div class="container" id="about">
         <div class="row">
           <div  class="col-lg-8 mx-auto">
@@ -103,12 +104,12 @@
     </section>
 
     <!-- Project Section -->
-    <section id="projects" class="download-section content-section text-center">
-      <div >
-        <div class="col-lg-8 mx-auto">
+    <section  class="download-section content-section text-center" id="projects">
+      <div class="container" >
           <h2>My Work</h2>
           <p>You can find my work over here.</p>
-            <a href="Under-Development.html" class="btn btn-default btn-lg">
+          <br></br>
+            <a href="My-Projects-Games.html" class="btn btn-default btn-lg"  >
               <div> <img src="https://i.ytimg.com/vi/TZGETa7-XWk/maxresdefault.jpg" width = "140" height = "100"> </div>
               Programs
             </a>
@@ -120,7 +121,6 @@
         <div> <img src="http://virtualrealitytimes.com/wp-content/uploads/2017/02/par1.jpg" width = "140" height = "100"> </div>
         Music
       </a>
-        </div>
       </div>
     </section>
 
@@ -130,7 +130,8 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Contact Me</h2>
-            <p>If you would like to talk to me, contact me via one of the following links
+            <p>If you would like to talk to me, contact me via one of the following links</p>
+            <br></br>
               <!-- <a href="http://startbootstrap.com/template-overviews/grayscale/">Grayscale template overview page</a>
               on Start Bootstrap to give some feedback about this theme!</p> -->
             <ul class="list-inline banner-social-buttons">
@@ -169,29 +170,30 @@
     <!-- <div id="map"></div> -->
 
     <!-- Footer -->
-    <footer>
+    <footer  style="background-color:black">
       <div class="container text-center">
         <p>Copyright &copy; Jeff Jose 2017</p>
       </div>
     </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/grayscale.min.js"></script>
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Loading screen starter--->
-    <script>
-    function fatherLoad(){
-      $(function(){
-      })};
-      $("#fatherLoad").fadeOut("slow");
-      setTimeout(fatherLoad,4000);
-    </script>
-  </body>
+        <!-- Custom scripts for this template -->
+        <script src="js/grayscale.min.js"></script>
+
+        <!-- Loading screen starter--->
+        <script>
+        function fatherLoad(){
+          $(function(){
+            $("#fatherLoad").fadeOut("slow");
+          })};
+          setTimeout(fatherLoad,4000);
+        </script>
+        </body>
 </html>
