@@ -165,6 +165,16 @@ a {
   background-size: cover;
   background-attachment: fixed}
 
+.courseWork-section{
+  color: white;
+  background: url("../img/leaf.jpg") no-repeat center center;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed}
+
   .connect-section {
     color: white;
     background: url("../img/connect-background.jpg") no-repeat center center;
@@ -175,7 +185,7 @@ a {
     background-size: cover;
     background-attachment: fixed}
 
-/*This is for  the project page sections*/
+/*This is for  the project game page sections*/
 .SpacePuzzler-section {
   color: white;
   background-color: black}
@@ -184,6 +194,34 @@ a {
     color: white;
     background: url("../img/Projects/SpacePuzzlerImage.PNG") no-repeat center center;
     background-color: black}
+
+    .DungeonRitual-section {
+      color: white;
+      background-color: black}
+
+      .DungeonRitual-rightSection {
+        color: white;
+        background: url("../img/Projects/DungeonRitualImage.PNG") no-repeat center center;
+        background-color: black}
+
+/*This is the project-Film page*/
+/*This is for  the project game page sections*/
+.CookieCutter-section {
+  color: white;
+  background-color: black}
+
+  .CookieCutter-leftSection {
+    color: white;
+    width: 50%;
+}
+
+    .GuyThing-section {
+      color: white;
+      background-color: black}
+
+      .GuyThing-rightSection {
+        color: white;
+        background-color: black}
 
 #map {
   width: 100%;
