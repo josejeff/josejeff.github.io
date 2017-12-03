@@ -8,18 +8,18 @@
     <link rel="shortcut icon" href="Game/TemplateData/favicon.ico" />
     <script src="Game/TemplateData/UnityProgress.js"></script>
   </head>
-  <body class="template" style="background-color:black">
+  <body class="template" style="backgroundColor:black">
     <div class="template-wrap clear">
       <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+      <br>
       <div class="logo"></div>
       <div class="fullscreen"><img src="Game/TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
       <div class="title">Space Puzzler</div>
-      <br>
       <div style="color:white">
         <br>
         <br>
-        <h3>Please wait as the game might be loading</h3>
         <br>
+        <h2>Please wait as the game may be loading</h2>
         <h2>Description:</h2>
         <h3>You are a ball in space trying to find out why you are here and what is your purpose.</h3>
         <h3>Solve the puzzles to get further in this space maze and find out more about who you are and your origins</h3>
@@ -39,69 +39,11 @@
     compatibilitycheck: null,
     backgroundColor: "#FFFFFF",
     splashStyle: "Dark",
-    dataUrl: "Game/Release/TheGame.data",
-    codeUrl: "Game/Release/TheGame.js",
-    asmUrl: "Game/Release/TheGame.asm.js",
-    memUrl: "Game/Release/TheGame.mem",
+    dataUrl: "Game/Release/Game.data",
+    codeUrl: "Game/Release/Game.js",
+    asmUrl: "Game/Release/Game.asm.js",
+    memUrl: "Game/Release/Game.mem",
   };
-</script>
-<script>
-  /**
-   * Created by
-   * Matteo Bicocchi @pupunzi
-   * Pietro Polsinelli @ppolsinelli
-   * Follow us as we are creating a game on #football
-   * with a story: "Football Voodoom" :-)
-   * */
-
-  var appName = "<b>" + Module.codeUrl.replace("Release/", "").replace(".js","") + "</b> ";
-  var canvas = document.getElementsByTagName("canvas")[0];
-  var canvasRect = canvas.getBoundingClientRect();
-
-  var loader = document.createElement("div");
-  loader.id = "loader";
-
-  var loaderWidth = canvas.offsetWidth;
-  var loaderHeight = canvas.offsetHeight;
-
-  document.body.appendChild(loader);
-
-  loader.style.position = "absolute";
-
-  loader.style.top = 0;
-  loader.style.bottom = 0;
-  loader.style.left = 0;
-  loader.style.right = 0;
-  loader.style.margin = "auto";
-  loader.style.width = loaderWidth + "px";
-  loader.style.height = loaderHeight + "px";
-  loader.style.background = "transparent";
-  loader.style.color = "#fff";
-  loader.style.opacity = 0.8;
-  loader.style.fontSize = "16px";
-  loader.style.letterSpacing = "3px";
-  loader.style.fontWeight = "100";
-  loader.style.textAlign = "left";
-  loader.style.padding =  "30px";
-  loader.style.boxSizing = "border-box";
-
-  var dotCount = 0;
-  var checkDisplay = setInterval(function(){
-
-    if(Module.progress.progress > 0) {
-      loader.style.display="none";
-      clearInterval(checkDisplay);
-    } else {
-
-      loader.innerHTML = "Loading " + appName;
-
-      for (var x = 0; x<dotCount; x++){
-        loader.innerHTML+= ".";
-      }
-
-      dotCount = dotCount >= 40 ? 0 : ++dotCount;
-    }
-  },100)
 </script>
 <script src="Game/Release/UnityLoader.js"></script>
 
