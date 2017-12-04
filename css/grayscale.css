@@ -55,22 +55,22 @@ a {
   #mainNav .navbar-toggler {
     font-size: 14px;
     padding: 11px;
-    color: white;
-    border: 1px solid white; }
+    color: #fff;
+    border: 1px solid #fff; }
   #mainNav .navbar-brand {
     font-weight: 700; }
   #mainNav a {
-    color: white; }
+    color: #fff; }
   #mainNav .navbar-nav .nav-item {
     -webkit-transition: background 0.3s ease-in-out;
     -moz-transition: background 0.3s ease-in-out;
     transition: background 0.3s ease-in-out; }
     #mainNav .navbar-nav .nav-item:hover {
       color: fade(white, 80%);
-      outline: none;
+      outline: 0;
       background-color: transparent; }
     #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
-      outline: none;
+      outline: 0;
       background-color: transparent; }
   @media (min-width: 992px) {
     #mainNav {
