@@ -4,6 +4,6 @@ My [portfolio](http://startbootstrap.com/template-overviews/grayscale/) website 
 
 ## Preview
 
-[![Grayscale Preview](/home page.jpg)](https://josejeff.github.io)
+[![Grayscale Preview](home page.PNG)](https://josejeff.github.io)
 
 **[View Live Preview](https://josejeff.github.io)**
