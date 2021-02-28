@@ -15,6 +15,16 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style type="text/css">
+            .mobileHide { display: inline; }
+          
+            /* Smartphone Portrait and Landscape */
+            @media only screen
+              and (min-device-width : 320px)
+              and (max-device-width : 480px){
+               .mobileHide { display: none;}
+            }
+          </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -121,7 +131,7 @@
                     <div class="col-lg-4 mr-auto"><p class="lead">Now that I have grown older, my passion has taken me to work on data analysis, web development and also some full stack development projects.</p></div>
                 </div>
                 <a style="display: block; margin-left: auto; margin-right: auto; width: 20%; margin-top: 50px;" class="btn btn-xl btn-outline-light" href="JoseJeffResume.pdf" download="Jeff Resume" target="_blank" rel="noreferrer noopener">
-                    <i class="fas fa-file-pdf"></i>Resume
+                    <i class="fas fa-file-pdf"></i><p class="mobileHide">Resume</p>
                 </a>
             </div>
         </section>
@@ -368,9 +378,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Third party plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Contact form JS-->
-        <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
